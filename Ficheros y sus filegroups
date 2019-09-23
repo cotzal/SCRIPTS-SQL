@@ -1,0 +1,8 @@
+
+		select a.FILEID,
+		a.filename ,
+		fg.name ,
+		a.name 
+		 		from dbo.sysfiles a 
+		inner join sys.filegroups as fg on a.groupid = fg.data_space_id 
+		where filename like 'n%'
