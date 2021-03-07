@@ -45,6 +45,6 @@ sys.database_files as f
 on f.data_space_id = fg.data_space_id
 where
 i.index_id in (0, 1)
-and fg.name = 'PRIMARY' and f.name = 'COMERCIA_DWH'
+and fg.name = 'PRIMARY' and f.name = 'COMERCIA_AGR'
 )
 ORDER BY X.[rows] DESC
