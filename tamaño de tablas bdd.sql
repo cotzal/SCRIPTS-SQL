@@ -19,4 +19,4 @@ INSERT @sizes EXEC sp_msForEachTable 'EXEC sp_spaceused ''?'''
  
 SELECT *
 FROM   @sizes
-ORDER BY convert(int, substring(data, 1, len(data)-3)) desc
+ORDER BY convert(bigint, substring(data, 1, len(data)-3)) desc
