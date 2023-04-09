@@ -4,6 +4,6 @@ FROM sys.objects SO INNER JOIN sys.columns SC
 
 ON SO.OBJECT_ID = SC.OBJECT_ID
 
-WHERE SO.TYPE = 'U'
+WHERE SO.TYPE = 'U' and sc.name like '%NIF%'
 
 ORDER BY SO.NAME, SC.NAME
