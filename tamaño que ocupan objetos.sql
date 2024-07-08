@@ -47,3 +47,5 @@ SELECT
   Rows AS Filas FROM #results
 ORDER BY
   CONVERT(bigint, reserved) DESC
+
+DROP TABLE   #results
